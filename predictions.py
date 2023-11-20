@@ -120,9 +120,9 @@ for i, price in enumerate(predicted_prices_transformed, start=1):
 # Optional: Plot the predictions
 plt.figure(figsize=(10, 5))
 predicted_dates = pd.date_range(start=df.index[-1] + pd.Timedelta(days=1), periods=7)
-plt.plot(predicted_dates, predicted_prices, label='LSTM Predicted Prices for Next Week')
+plt.plot(predicted_dates, predicted_prices, label='LSTM Predicted Price Change for Next Week')
 plt.title('Future Stock Prices Prediction')
 plt.xlabel('Date')
-plt.ylabel('Price')
+plt.ylabel('Price Change')
 plt.legend()
 plt.show()
