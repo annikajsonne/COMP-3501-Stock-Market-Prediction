@@ -29,7 +29,7 @@ print("DataFrame Shape:", df.shape)
 print("Null Values Present:", df.isnull().values.any())
 
 #Plot the True Adj Close Value
-df["Adj Close"].plot()
+df["Adj Close"].plot(title="Adj Close Values for MSFT Stock")
 # plt.show()
 
 #Set Target Variable
